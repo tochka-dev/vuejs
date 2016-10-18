@@ -18,3 +18,4 @@
 - [Browserify + Vueify](https://github.com/GitHubTochkaDev/vuejs-tutorials/tree/vueify)
 - [Webpack + vue-loader](https://github.com/GitHubTochkaDev/vuejs-tutorials/tree/vue-loader)
 - [vue-resource](https://github.com/GitHubTochkaDev/vuejs-tutorials/tree/vue-resource)
+- [vue-router](https://github.com/GitHubTochkaDev/vuejs-tutorials/tree/vue-router)
