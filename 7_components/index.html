@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        
+        <v-dialog btn-text="Согласен">Вопрос 1</v-dialog>
+        <v-dialog btn-text="Хорошо">Вопрос 2</v-dialog>
+
+    </div>
+
+    <template id="dialog-template">
+        <div>
+            <div class="Dialog" v-show="active">
+                <div class="Dialog__overlay" @click="close()"></div>
+                <div class="Dialog__content">
+                    <div class="Dialog__body">
+                        <slot></slot>
+                    </div>
+                    <div class="Dialog__footer">
+                        <button class="btn" @click="onCancel()">Отмена</button>
+                        <button class="btn btn-ok" @click="onConfirm()">{{ btnText }}</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="link" href="#" @click="open()">ссылка</a>
+        </div>
+    </template>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script>
+        Vue.component('v-dialog', {
+            template: '#dialog-template',
+            data: function() {
+                return {
+                    active: false
+                }
+            },
+            props: ['btnText'],
+            methods: {
+                open: function() {
+                    this.active = true
+                },
+                close: function() {
+                    this.active = false
+                },
+                onCancel: function() {
+                    this.close();
+                },
+                onConfirm: function() {
+                    this.close();
+                }
+            }
+        })
+
+        new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+</html>

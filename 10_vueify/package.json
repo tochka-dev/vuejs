@@ -1,0 +1,21 @@
+{
+  "name": "vueify-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t vueify -e main.js -o build.js",
+    "watch": "watchify -t vueify -e main.js -o build.js"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "vue": "^1.0.24",
+    "vue-template-compiler": "^2.1.6",
+    "vueify": "^8.4.1",
+    "watchify": "^3.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

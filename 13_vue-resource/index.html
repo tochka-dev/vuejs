@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>vue-resource</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <browser>   
+            <div class="editor">
+                <form @submit.prevent="savePost()">
+                    <input type="text" placeholder="Заголовок" v-model="post.title">
+                    <textarea placeholder="Текст" v-model="post.body"></textarea>
+                    <button>Опубликовать</button>
+                </form>
+            </div>
+        </browser>
+        
+        <script src="build.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <header>
+            <nav>
+                <a href="#" @click="switchView('square')">Квадрат</a>
+                <a href="#" @click="switchView('triangle')">Треугольник</a>
+                <a href="#" @click="switchView('circle')">Круг</a>
+                <a href="#" @click="switchView('egg')">Яйцо</a>
+            </nav>
+        </header>
+        
+        <component :is="currentView" transition="switch"></component>
+    </div>
+
+    <template id="square-template">
+        <div class="square"></div>
+    </template>
+
+    <template id="circle-template">
+        <div class="circle"></div>
+    </template>
+
+    <template id="triangle-template">
+        <div class="triangle"></div>
+    </template>
+
+    <template id="egg-template">
+        <div class="egg"></div>
+    </template>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

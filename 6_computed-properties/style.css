@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+textarea {
+    width: 350px;
+    height: 140px;
+    margin: 5px 0 10px;
+    font-size: 16px;
+}
+
+textarea, button, span {
+    display: block
+}

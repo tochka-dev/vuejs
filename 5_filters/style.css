@@ -1,0 +1,62 @@
+html, body, #result {
+  margin: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+#app, input {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Roboto Condensed'
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #222;
+}
+
+input {
+    border: none;
+    width: 200px;
+    text-align: center;
+    outline: none;
+}
+
+#app > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+textarea, #result {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 16px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+textarea {
+  border: none;
+  border-right: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  background-color: #f6f6f6;
+  font-family: 'Monaco', courier, monospace;
+}
+
+#result {
+    font-size: 22px;
+}

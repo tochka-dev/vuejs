@@ -1,0 +1,29 @@
+body {
+    background-color: #3949ab;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #272727;
+}
+
+ul {
+    list-style: none;
+    width: 240px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    padding: 6px 0;
+    border-radius: 2px;
+}
+
+li {
+    display: block;
+    padding: 20px 30px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #aaa;
+}
